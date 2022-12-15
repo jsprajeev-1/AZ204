@@ -1,0 +1,23 @@
+<div class="results">
+  <h1 class="md-display-1" align="center">Your results:</h1>
+  <div class="answer"
+    *ngFor="let a of answers!.values; let i = index"
+    [ngClass]="{ correct: a.correct }">
+    <div class="question-repeat">
+      {{i+1}}. <p [innerHtml]="questions![i].label"></p>
+    </div>
+    <p class="your-answer">
+      {{ a.value }} ---
+      <span class="wrong-right">{{
+        a.correct ? "well done!" : "oops, maybe next time"
+      }}</span>
+    </p>
+  </div>
+</div>
+<div class="center">
+  <a routerLink="/welcome">
+    <button color="btn btn-primary" class="btn btn-primary">
+      Choose another quiz
+    </button>
+  </a>
+</div>
