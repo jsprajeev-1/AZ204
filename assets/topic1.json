@@ -25,6 +25,19 @@
     ]
   },
   {
+    "label": "DRAG DROP - <br />You have downloaded an Azure Resource Manager template to deploy numerous virtual machines. The template is based on a current virtual machine, but must be adapted to reference an administrative password.<br />You need to make sure that the password is not stored in plain text. <br />You are preparing to create the necessary components to achieve your goal.<br />Which of the following should you create to achieve your goal? Answer by dragging the correct option from the list to the answer area.<br />Select and Place:",
+    "options": [
+      "An Azure Storage account",
+      "Azure Active Directory (AD) Identity Protection",
+      "An Azure Policy",
+      "A backup policy"
+    ],
+    "answers": [
+      "An Azure Key Vault",
+      "An acccess policy"
+    ]
+  },
+  {
     "label": "Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group. <br />Developers have created an application named MyApp. MyApp was packaged into a container image.<br /> You need to deploy the YAML manifest file for the application. <br /><strong>Solution: </strong>You install the Azure CLI on the device and run the kubectl apply `\"f myapp.yaml command. <br />Does this meet the goal?",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong><br />kubectl apply -f myapp.yaml applies a configuration change to a resource from a file or stdin. <br /> Reference:<br />https://kubernetes.io/docs/reference/kubectl/overview/ <br/>https://docs.microsoft.com/en-us/cli/azure/aks"
@@ -129,6 +142,18 @@
         "value": "40",
         "correct": false 
       }
+    ]
+  },
+  {
+    "label": "DRAG DROP - <br />You are creating an Azure Cosmos DB account that makes use of the SQL API. Data will be added to the account every day by a web application.<br />You need to ensure that an email notification is sent when information is received from IoT devices, and that compute cost is reduced.<br />You decide to deploy a function app.<br />Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area.<br />Select and Place:",
+    "options": [
+      "Azure Cosmos DB connector",
+      "SendGrid action",
+      "Azure Event Hubs bindings"
+    ],
+    "answers": [
+      "Consumption plan",
+      "SendGrid binding"
     ]
   },
   {
@@ -403,6 +428,19 @@
         "value": "the Logic Apps Designer",
         "correct": false
       }
+    ]
+  },
+  {
+    "label": "DRAG DROP - <br />You are a developer for a company that provides a bookings management service in the tourism industry. You are implementing Azure Search for the tour agencies listed in your company's solution.<br />You create the index in Azure Search. You now need to use the Azure Search .NET SDK to import the relevant data into the Azure Search service.<br />Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions from left to right and arrange them in the correct order.<br />Select and Place:",
+    "options": [
+      "Create a DataSource instance and set its container property to the DataContainer.",
+      "Set the DataSources property of the SearchServiceClient",
+      "Call the Documents. Suggest method of the SearchIndexClient and pass the DataSource."
+    ],
+    "answers": [
+      "Create a SearchIndexClient object to connect to the search index.",
+      "Create an IndexBatch that contains the documents which must be added.",
+      "Call the Documents.Index method of the SearchIndexClient and pass the IndexBatch."
     ]
   },
   {

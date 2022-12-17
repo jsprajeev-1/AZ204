@@ -1,14 +1,14 @@
 [
   {
-    "label": "Spices",
-    "name": "spices",
-    "description": "Questions about spices",
-    "fileName": "spices.json"
-  },
-  {
     "label": "Topic1",
     "name": "Topic1",
-    "description": "Questions about spices",
+    "description": "Questions about Topic1",
     "fileName": "topic1.json"
+  },
+  {
+    "label": "Topic2",
+    "name": "Topic2",
+    "description": "Questions about Topic2",
+    "fileName": "topic2.json"
   }
 ]
