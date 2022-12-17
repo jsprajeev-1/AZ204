@@ -84,10 +84,7 @@
   {
     "id": "10",
     "label": "DRAG DROP - <br />You are developing a Docker/Go using Azure App Service Web App for Containers. You plan to run the container in an App Service on Linux. You identify a Docker container image to use.<br />None of your current resource groups reside in a location that supports Linux. You must minimize the number of resource groups required.<br />You need to create the application and perform an initial deployment.<br />Which three Azure CLI commands should you use to develop the solution? To answer, move the appropriate commands from the list of commands to the answer area and arrange them in the correct order.<br />Select and Place:",
-    "options": [
-      "az group update",
-      "az webapp update"
-    ],
+    "options": ["az group update", "az webapp update"],
     "answers": [
       "az group create",
       "az appservice plan create",

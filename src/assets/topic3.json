@@ -1,0 +1,206 @@
+[
+  {
+    "id": "2",
+    "label": "You are building a website that uses Azure Blob storage for data storage. You configure Azure Blob storage lifecycle to move all blobs to the archive tier after 30 days.<br />Customers have requested a service-level agreement (SLA) for viewing data older than 30 days.<br />You need to document the minimum SLA for data recovery.<br />Which SLA should you use?",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong><br />The archive access tier has the lowest storage cost. But it has higher data retrieval costs compared to the hot and cool tiers. Data in the archive tier can take several hours to retrieve depending on the priority of the rehydration. For small objects, a high priority rehydrate may retrieve the object from archive in under 1 hour.",
+      "reference": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers?tabs=azure-portal"
+    },
+    "choices": [
+      {
+        "value": "at least two days",
+        "correct": false
+      },
+      {
+        "value": "between one and 15 hours",
+        "correct": true
+      },
+      {
+        "value": "at least one day",
+        "correct": false
+      },
+      {
+        "value": "between zero and 60 minutes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "label": "DRAG DROP - <br />You have an application that uses Azure Blob storage.<br />You need to update the metadata of the blobs.<br />Which three methods should you use to develop the solution? To answer, move the appropriate methods from the list of methods to the answer area and arrange them in the correct order.<br />Select and Place:",
+    "metadata": {
+      "reference": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-properties-metadata"
+    },
+    "options": ["FetchAttributesAsync", "UploadFileStream"],
+    "answers": [
+      "Metadata.Add",
+      "SetMetadataAsync",
+      "SetPropertiesAsync"
+    ]
+  },
+  {
+    "id": "7",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located throughout the world. A single device can produce 2 megabytes (MB) of data every 24 hours. Each store location has one to five devices that send data.<br />You must store the device data in Azure Blob storage. Device data must be correlated based on a device identifier. Additional stores are expected to open in the future.<br />You need to implement a solution to receive the device data.<br />Solution: Provision an Azure Event Grid. Configure the machine identifier as the partition key and enable capture.<br />Does the solution meet the goal?",
+    "metadata": {
+      "description": "<strong>Correct Answer: No</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "label": "You develop Azure solutions.<br />A .NET application needs to receive a message each time an Azure virtual machine finishes processing data. The messages must NOT persist after being processed by the receiving application.<br />You need to implement the .NET object that will receive the messages.<br />Which object should you use?",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions"
+    },
+    "choices": [
+      {
+        "value": "QueueClient",
+        "correct": true
+      },
+      {
+        "value": "SubscriptionClient",
+        "correct": false
+      },
+      {
+        "value": "TopicClient",
+        "correct": false
+      },
+      {
+        "value": "CloudQueueClient",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "label": "DRAG DROP - <br />You are maintaining an existing application that uses an Azure Blob GPv1 Premium storage account. Data older than three months is rarely used.<br />Data newer than three months must be available immediately. Data older than a year must be saved but does not need to be available immediately.<br />You need to configure the account to support a lifecycle management rule that moves blob data to archive storage for data not modified in the last year.<br />Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.<br />Select and Place:",
+    "metadata": {
+      "reference": "https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers"
+    },
+    "options": ["Create a new GPv2 Standard account and set its default access tier level to cool"],
+    "answers": [
+      "Upgrade the storage account to GPv2",
+      "Copy the data to be archived to a Standard GPV2 storage account and then delete the data from the original storage account",
+      "Change the storage account access tier hot to cool"
+    ]
+  },
+  {
+    "id": "10",
+    "label": "You develop Azure solutions.<br />You must connect to a No-SQL globally-distributed database by using the .NET API.<br />You need to create an object to configure and execute requests in the database.<br />Which code segment should you use?",
+    "metadata": {
+      "description": "<strong>Correct Answer: C</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-get-started"
+    },
+    "choices": [
+      {
+        "value": "new Container(EndpointUri, PrimaryKey);",
+        "correct": false
+      },
+      {
+        "value": "new Database(EndpointUri, PrimaryKey);",
+        "correct": false
+      },
+      {
+        "value": "new CosmosClient(EndpointUri, PrimaryKey);",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "label": "You have an existing Azure storage account that stores large volumes of data across multiple containers.<br />You need to copy all data from the existing storage account to a new storage account. The copy process must meet the following requirements:<br />✑ Automate data movement.<br />✑ Minimize user input required to perform the operation.<br />✑ Ensure that the data movement process is recoverable.<br />What should you use?",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs-copy"
+    },
+    "choices": [
+      {
+        "value": "AzCopy",
+        "correct": true
+      },
+      {
+        "value": "Azure Storage Explorer",
+        "correct": false
+      },
+      {
+        "value": "Azure portal",
+        "correct": false
+      },
+      {
+        "value": ".NET Storage Client Library",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "label": "You develop and deploy a web application to Azure App Service. The application accesses data stored in an Azure Storage account. The account contains several containers with several blobs with large amounts of data. You deploy all Azure resources to a single region.<br />You need to move the Azure Storage account to the new region. You must copy all data to the new region.<br />What should you do first?",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/storage/common/storage-account-move?tabs=azure-portal"
+    },
+    "choices": [
+      {
+        "value": "Export the Azure Storage account Azure Resource Manager template",
+        "correct": true
+      },
+      {
+        "value": "Initiate a storage account failover",
+        "correct": false
+      },
+      {
+        "value": "Configure object replication for all blobs",
+        "correct": false
+      },
+      {
+        "value": "Use the AzCopy command line tool",
+        "correct": false
+      },
+      {
+        "value": "Create a new Azure Storage account in the current region",
+        "correct": false
+      },
+      {
+        "value": "Create a new subscription in the current region",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "label": "An organization deploys Azure Cosmos DB.<br />You need to ensure that the index is updated as items are created, updated, or deleted.<br />What should you do?",
+    "metadata": {
+      "description": "<strong>Correct Answer: D</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy"
+    },
+    "choices": [
+      {
+        "value": "Set the indexing mode to Lazy.",
+        "correct": false
+      },
+      {
+        "value": "Set the value of the automatic property of the indexing policy to False.",
+        "correct": false
+      },
+      {
+        "value": "Set the value of the EnableScanInQuery option to True.",
+        "correct": false
+      },
+      {
+        "value": "Set the indexing mode to Consistent.",
+        "correct": true
+      }
+    ]
+  }
+]

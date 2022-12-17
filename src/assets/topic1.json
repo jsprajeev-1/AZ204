@@ -32,10 +32,7 @@
       "An Azure Policy",
       "A backup policy"
     ],
-    "answers": [
-      "An Azure Key Vault",
-      "An acccess policy"
-    ]
+    "answers": ["An Azure Key Vault", "An acccess policy"]
   },
   {
     "label": "Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group. <br />Developers have created an application named MyApp. MyApp was packaged into a container image.<br /> You need to deploy the YAML manifest file for the application. <br /><strong>Solution: </strong>You install the Azure CLI on the device and run the kubectl apply `\"f myapp.yaml command. <br />Does this meet the goal?",
@@ -55,7 +52,7 @@
   },
   {
     "label": "Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group. <br />Developers have created an application named MyApp. MyApp was packaged into a container image. <br />You need to deploy the YAML manifest file for the application.<br /><strong>Solution: </strong>You install the docker client on the device and run the docker run -it microsoft/azure-cli:0.10.17 command. <br />Does this meet the goal?",
-    "metadata":{
+    "metadata": {
       "description": "<strong>Correct Answer: No</strong>"
     },
     "choices": [
@@ -128,19 +125,19 @@
     "choices": [
       {
         "value": "10",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "20",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "30",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "40",
-        "correct": false 
+        "correct": false
       }
     ]
   },
@@ -151,10 +148,7 @@
       "SendGrid action",
       "Azure Event Hubs bindings"
     ],
-    "answers": [
-      "Consumption plan",
-      "SendGrid binding"
-    ]
+    "answers": ["Consumption plan", "SendGrid binding"]
   },
   {
     "label": "This question requires that you evaluate the underlined text to determine if it is correct.<br/>You company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.<br/>You need to devise a strategy to migrate MongoDB to the Azure Cosmos DB account.<br/>You include the Data Management Gateway tool in your migration strategy.<br/>Instructions: Review the underlined text. If it makes the statement correct, select `No change required.` If the statement is incorrect, select the answer choice that makes the statement correct.",
@@ -165,19 +159,19 @@
     "choices": [
       {
         "value": "No change required",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "mongorestore",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "Azure Storage Explorer",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "AzCopy",
-        "correct": false 
+        "correct": false
       }
     ]
   },
@@ -190,19 +184,19 @@
     "choices": [
       {
         "value": "Run the az keyvault secret command.",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "Enable Azure AD Connect.",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "Enable Managed Service Identity (MSI).",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "Create an Azure AD service principal.",
-        "correct": false 
+        "correct": false
       }
     ]
   },
@@ -215,19 +209,19 @@
     "choices": [
       {
         "value": "No change required.",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "a secret",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "a login hint",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "a client ID",
-        "correct": false 
+        "correct": false
       }
     ]
   },
@@ -240,19 +234,19 @@
     "choices": [
       {
         "value": "Azure AD token.",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "Azure Multi-Factor authentication.",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "Active Directory integrated authentication.",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "OATH software tokens.",
-        "correct": false 
+        "correct": false
       }
     ]
   },
@@ -265,19 +259,19 @@
     "choices": [
       {
         "value": "Run the Add-AzKeyVaultKey cmdlet.",
-        "correct": false 
+        "correct": false
       },
       {
         "value": "Run the az keyvault update --enable-soft-delete true --enable-purge-protection true CLI.",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "Implement virtual network service endpoints for Azure Key Vault.",
-        "correct": true 
+        "correct": true
       },
       {
         "value": "Run the az keyvault update --enable-soft-delete false CLI.",
-        "correct": false 
+        "correct": false
       }
     ]
   },
