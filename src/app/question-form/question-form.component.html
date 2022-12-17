@@ -2,10 +2,14 @@
   <div *ngIf="!question.answers">
     <strong [innerHtml]="question.label"></strong>
     <form [formGroup]="form">
-      <div class="form-check" *ngFor="let choice of question.choices; let i = index">
-        <input class="form-check-input" type="radio" [value]="choice" formControlName="choice"
-          id="flexRadioDefault{{i}}" />
-        <label class="form-check-label" for="flexRadioDefault{{i}}">{{choice.value}}</label>
+      <div class="row padding-top">
+        <div class="col-sm-12">
+          <div class="form-check" *ngFor="let choice of question.choices; let i = index">
+            <input class="form-check-input" type="radio" [value]="choice" formControlName="choice"
+              id="flexRadioDefault{{i}}" />
+            <label class="form-check-label" for="flexRadioDefault{{i}}">{{choice.value}}</label>
+          </div>
+        </div>
       </div>
     </form>
   </div>
