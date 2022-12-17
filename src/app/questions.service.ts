@@ -25,7 +25,7 @@ export class QuestionsService {
     return this.http.get(`./assets/${fileName}.json`).pipe(
       map((result: any) => {
         return result.map(
-          (r: any) => new Question(r.label, r.choices, r.metadata, r.options, r.answers)
+          (r: any) => new Question(r.label, r.choices, r.metadata, r.options, r.answers, r.type)
         );
       })
     );

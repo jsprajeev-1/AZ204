@@ -1,5 +1,5 @@
 <div class="quiz" *ngIf="question">
-  <div *ngIf="!question.answers">
+  <div *ngIf="question.type === 'radio'">
     <strong [innerHtml]="question.label"></strong>
     <form [formGroup]="form">
       <div class="row padding-top">
@@ -13,7 +13,12 @@
       </div>
     </form>
   </div>
-  <div *ngIf="question.answers">
+
+
+
+
+
+  <div *ngIf="question.type ==='dragDrop'">
     <div class="row">
       <strong [innerHtml]="question.label"></strong>
       <div class="col-sm-6">
@@ -32,7 +37,20 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+  <app-check-box *ngIf="question.type === 'checkbox'" [question]="question"></app-check-box>
+
+
+
   <br />
+
+
+
+  
   <div>
     <ngb-accordion #acc="ngbAccordion" *ngIf="question.metadata">
       <ngb-panel *ngIf="question.metadata.description" title="Reveal Answer">

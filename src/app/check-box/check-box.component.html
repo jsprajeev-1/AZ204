@@ -1,0 +1,30 @@
+<strong [innerHtml]="question.label"></strong>
+<!-- <form [formGroup]="checkBoxForm">
+  <div class="form-check" *ngFor="let item of checkBoxValueList; let i = index">
+    <input type="checkbox" class="form-check-input" [formControlName]="item" id="{{i}}" name="checkbox-{{i}}"
+      value="{{item}}">
+    <label class="form-check-label" for="{{i}}">{{item}}</label>
+  </div>
+</form>
+<pre>
+  {{checkBoxForm.value | json}}
+</pre>
+
+<pre>
+  {{areValuesCorrect()}}
+</pre> -->
+
+<form [formGroup]="checkBoxForm">
+  <div class="form-check" *ngFor="let item of question.choices; let i = index">
+    <input type="checkbox" class="form-check-input" [formControlName]="item.description" id="{{i}}" name="checkbox-{{i}}"
+      value="{{item}}">
+    <label class="form-check-label" for="{{i}}">{{item}}</label>
+  </div>
+</form>
+<pre>
+  {{checkBoxForm.value | json}}
+</pre>
+
+<pre>
+  {{areValuesCorrect()}}
+</pre>

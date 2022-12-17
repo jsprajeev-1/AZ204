@@ -1,6 +1,7 @@
 [
   {
     "label": "You have two Hyper-V hosts named Host1 and Host2. Host1 has an Azure virtual machine named VM1 that was deployed by using a custom Azure Resource Manager template. <br /> You need to move VM1 to Host2.<br /> What should you do?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: From the Redeploy blade, click Redeploy.</strong><br />When you redeploy a VM, it moves the VM to a new node within the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources. <br />",
       "reference": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/redeploy-to-new-node"
@@ -26,6 +27,7 @@
   },
   {
     "label": "DRAG DROP - <br />You have downloaded an Azure Resource Manager template to deploy numerous virtual machines. The template is based on a current virtual machine, but must be adapted to reference an administrative password.<br />You need to make sure that the password is not stored in plain text. <br />You are preparing to create the necessary components to achieve your goal.<br />Which of the following should you create to achieve your goal? Answer by dragging the correct option from the list to the answer area.<br />Select and Place:",
+    "type": "dragDrop",
     "options": [
       "An Azure Storage account",
       "Azure Active Directory (AD) Identity Protection",
@@ -36,6 +38,7 @@
   },
   {
     "label": "Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group. <br />Developers have created an application named MyApp. MyApp was packaged into a container image.<br /> You need to deploy the YAML manifest file for the application. <br /><strong>Solution: </strong>You install the Azure CLI on the device and run the kubectl apply `\"f myapp.yaml command. <br />Does this meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong><br />kubectl apply -f myapp.yaml applies a configuration change to a resource from a file or stdin. <br /> Reference:<br />https://kubernetes.io/docs/reference/kubectl/overview/ <br/>https://docs.microsoft.com/en-us/cli/azure/aks"
     },
@@ -52,6 +55,7 @@
   },
   {
     "label": "Your company has an Azure Kubernetes Service (AKS) cluster that you manage from an Azure AD-joined device. The cluster is located in a resource group. <br />Developers have created an application named MyApp. MyApp was packaged into a container image. <br />You need to deploy the YAML manifest file for the application.<br /><strong>Solution: </strong>You install the docker client on the device and run the docker run -it microsoft/azure-cli:0.10.17 command. <br />Does this meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong>"
     },
@@ -68,6 +72,7 @@
   },
   {
     "label": "Your company has a web app named WebApp1. <br />You use the WebJobs SDK to design a triggered App Service background task that automatically invokes a function in the code every time new data is received in a queue.<br />You are preparing to configure the service processes a queue data item.<br /> Which of the following is the service you should use?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: WebJobs</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs"
@@ -93,6 +98,7 @@
   },
   {
     "label": "Your company has an Azure subscription.<br />You need to deploy a number of Azure virtual machines to the subscription by using Azure Resource Manager (ARM) templates. The virtual machines will be included in a single availability set.<br />You need to ensure that the ARM template allows for as many virtual machines as possible to remain accessible in the event of fabric failure or maintenance.<br />Which of the following is the value that you should configure for the platformFaultDomainCount property?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Max Value</strong><br />The number of fault domains for managed availability sets varies by region - either two or three per region.",
       "reference": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/manage-availability"
@@ -118,6 +124,7 @@
   },
   {
     "label": "Your company has an Azure subscription.<br />You need to deploy a number of Azure virtual machines to the subscription by using Azure Resource Manager (ARM) templates. The virtual machines will be included in a single availability set.<br />You need to ensure that the ARM template allows for as many virtual machines as possible to remain accessible in the event of fabric failure or maintenance<br />Which of the following is the value that you should configure for the platformUpdateDomainCount property?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: 20</strong><br />Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time.",
       "reference": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/manage-availability"
@@ -143,6 +150,7 @@
   },
   {
     "label": "DRAG DROP - <br />You are creating an Azure Cosmos DB account that makes use of the SQL API. Data will be added to the account every day by a web application.<br />You need to ensure that an email notification is sent when information is received from IoT devices, and that compute cost is reduced.<br />You decide to deploy a function app.<br />Which of the following should you configure the function app to use? Answer by dragging the correct options from the list to the answer area.<br />Select and Place:",
+    "type": "dragDrop",
     "options": [
       "Azure Cosmos DB connector",
       "SendGrid action",
@@ -152,6 +160,7 @@
   },
   {
     "label": "This question requires that you evaluate the underlined text to determine if it is correct.<br/>You company has an on-premises deployment of MongoDB, and an Azure Cosmos DB account that makes use of the MongoDB API.<br/>You need to devise a strategy to migrate MongoDB to the Azure Cosmos DB account.<br/>You include the Data Management Gateway tool in your migration strategy.<br/>Instructions: Review the underlined text. If it makes the statement correct, select `No change required.` If the statement is incorrect, select the answer choice that makes the statement correct.",
+    "type": "radio",
     "metadata": {
       "description": "Correct Answer: B",
       "reference": "https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-migrate https://docs.mongodb.com/manual/reference/program/mongorestore/"
@@ -177,6 +186,7 @@
   },
   {
     "label": "You are developing an e-Commerce Web App.<br />You want to use Azure Key Vault to ensure that sign-ins to the e-Commerce Web App are secured by using Azure App Service authentication and Azure Active Directory (AAD).<br />What should you do on the e-Commerce Web App?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: C</strong><br />A managed identity from Azure Active Directory allows your app to easily access other AAD-protected resources such as Azure Key Vault.",
       "reference": "https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity https://docs.microsoft.com/en-us/samples/azure-samples/app-service-msi-keyvault-dotnet/keyvault-msi-appservice-sample/"
@@ -202,6 +212,7 @@
   },
   {
     "label": "This question requires that you evaluate the underlined text to determine if it is correct.<br />Your Azure Active Directory Azure (Azure AD) tenant has an Azure subscription linked to it.<br />Your developer has created a mobile application that obtains Azure AD access tokens using the OAuth 2 implicit grant type.<br />The mobile application must be registered in Azure AD.<br />You require a redirect URI from the developer for registration purposes.<br />Instructions: Review the underlined text. If it makes the statement correct, select `No change is needed.` If the statement is incorrect, select the answer choice that makes the statement correct.",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: A</strong><br />For Native Applications you need to provide a Redirect URI, which Azure AD will use to return token responses.",
       "reference": "https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-oauth-code"
@@ -227,6 +238,7 @@
   },
   {
     "label": "You manage an Azure SQL database that allows for Azure AD authentication.<br />You need to make sure that database developers can connect to the SQL database via Microsoft SQL Server Management Studio (SSMS). You also need to make sure the developers use their on-premises Active Directory account for authentication. Your strategy should allow for authentication prompts to be kept to a minimum.<br />Which of the following should you implement?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: C</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-oauth-code"
@@ -252,6 +264,7 @@
   },
   {
     "label": "You are developing an application to transfer data between on-premises file servers and Azure Blob storage. The application stores keys, secrets, and certificates in Azure Key Vault and makes use of the Azure Key Vault APIs.<br /> You want to configure the application to allow recovery of an accidental deletion of the key vault or key vault objects for 90 days after deletion.<br />What should you do?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: B</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/key-vault/general/overview-soft-delete"
@@ -277,6 +290,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are configuring a web app that delivers streaming video to users. The application makes use of continuous integration and deployment.<br />You need to ensure that the application is highly available and that the users' streaming experience is constant. You also want to configure the application to store data in a geographic location that is nearest to the user.<br />Solution: You include the use of Azure Redis Cache in your design.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong>"
     },
@@ -293,6 +307,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are configuring a web app that delivers streaming video to users. The application makes use of continuous integration and deployment.<br />You need to ensure that the application is highly available and that the users' streaming experience is constant. You also want to configure the application to store data in a geographic location that is nearest to the user.<br />Solution: You include the use of an Azure Content Delivery Network (CDN) in your design.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Yes</strong>",
       "reference": "https://docs.microsoft.com/en-in/azure/cdn/"
@@ -310,6 +325,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are configuring a web app that delivers streaming video to users. The application makes use of continuous integration and deployment.<br />You need to ensure that the application is highly available and that the users' streaming experience is constant. You also want to configure the application to store data in a geographic location that is nearest to the user.<br />Solution: You include the use of a Storage Area Network (SAN) in your design.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong>"
     },
@@ -326,6 +342,7 @@
   },
   {
     "label": "You develop a Web App on a tier D1 app service plan.<br />You notice that page load times increase during periods of peak traffic.<br />You want to implement automatic scaling when CPU load is above 80 percent. Your solution must minimize costs.<br />What should you do first?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Switch to the Standard App Service tier plan.</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-autoscale-get-started https://azure.microsoft.com/en-us/pricing/details/app-service/plans/"
@@ -351,6 +368,7 @@
   },
   {
     "label": "Your company's Azure subscription includes an Azure Log Analytics workspace.<br />Your company has a hundred on-premises servers that run either Windows Server 2012 R2 or Windows Server 2016, and is linked to the Azure Log Analytics workspace.<br />The Azure Log Analytics workspace is set up to gather performance counters associated with security from these linked servers.<br />You must configure alerts based on the information gathered by the Azure Log Analytics workspace.<br />You have to make sure that alert rules allow for dimensions, and that alert creation time should be kept to a minimum. Furthermore, a single alert notification must be created when the alert is created and when the alert is resolved.<br />You need to make use of the necessary signal type when creating the alert rules.<br />Which of the following is the option you should use?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: The Metric signal type.</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric"
@@ -376,6 +394,7 @@
   },
   {
     "label": "You are developing a .NET Core MVC application that allows customers to research independent holiday accommodation providers.<br />You want to implement Azure Search to allow the application to search the index by using various criteria to locate documents related to accommodation.<br />You want the application to allow customers to search the index by using regular expressions.<br />What should you do?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Configure the QueryType property of the SearchParameters class.</strong>",
       "reference": "https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.search.models.searchparameters"
@@ -401,6 +420,7 @@
   },
   {
     "label": "You are a developer at your company.<br />You need to update the definitions for an existing Logic App.<br />What should you use?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: the Logic App Code View</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-overview"
@@ -426,6 +446,7 @@
   },
   {
     "label": "DRAG DROP - <br />You are a developer for a company that provides a bookings management service in the tourism industry. You are implementing Azure Search for the tour agencies listed in your company's solution.<br />You create the index in Azure Search. You now need to use the Azure Search .NET SDK to import the relevant data into the Azure Search service.<br />Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions from left to right and arrange them in the correct order.<br />Select and Place:",
+    "type": "dragDrop",
     "options": [
       "Create a DataSource instance and set its container property to the DataContainer.",
       "Set the DataSources property of the SearchServiceClient",
@@ -439,6 +460,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are developing a solution for a public facing API.<br />The API back end is hosted in an Azure App Service instance. You have implemented a RESTful service for the API back end.<br />You must configure back-end authentication for the API Management service instance.<br />Solution: You configure Basic gateway credentials for the Azure resource.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong>",
       "reference": "https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-backend-entity"
@@ -456,6 +478,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are developing a solution for a public facing API.<br />The API back end is hosted in an Azure App Service instance. You have implemented a RESTful service for the API back end.<br/>You must configure back-end authentication for the API Management service instance.<br />Solution: You configure Client cert gateway credentials for the HTTP(s) endpoint.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Yes</strong>",
       "reference": "https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-backend-entity"
@@ -473,6 +496,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are developing a solution for a public facing API.<br />The API back end is hosted in an Azure App Service instance. You have implemented a RESTful service for the API back end.<br />You must configure back-end authentication for the API Management service instance.<br />Solution: You configure Basic gateway credentials for the HTTP(s) endpoint.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Yes</strong>",
       "reference": "https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-backend-entity"
@@ -490,6 +514,7 @@
   },
   {
     "label": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<br />You are developing a solution for a public facing API.<br />The API back end is hosted in an Azure App Service instance. You have implemented a RESTful service for the API back end.<br />You must configure back-end authentication for the API Management service instance.<br />Solution: You configure Client cert gateway credentials for the Azure resource.<br />Does the solution meet the goal?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: No</strong>",
       "reference": "https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-backend-entity"
@@ -507,6 +532,7 @@
   },
   {
     "label": "You are developing a .NET Core MVC application that allows customers to research independent holiday accommodation providers.<br />You want to implement Azure Search to allow the application to search the index by using various criteria to locate documents related to accommodation venues.<br />You want the application to list holiday accommodation venues that fall within a specific price range and are within a specified distance to an airport.<br />What should you do?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: Configure the Filter property of the SearchParameters class.</strong>",
       "reference": "https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.search.models.searchparameters https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.search.models.searchparameters.querytype"
@@ -532,6 +558,7 @@
   },
   {
     "label": "You are a developer at your company.<br/>You need to edit the workflows for an existing Logic App.<br />What should you use?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: the Logic App Code View</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-enterprise-integration-overview https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-author-definitions"
@@ -557,6 +584,7 @@
   },
   {
     "label": "You are developing an application that applies a set of governance policies for internal and external services, as well as for applications.<br />You develop a stateful ASP.NET Core 2.1 web application named PolicyApp and deploy it to an Azure App Service Web App. The PolicyApp reacts to events from Azure Event Grid and performs policy actions based on those events. <br />You have the following requirements:<br />✑ Authentication events must be used to monitor users when they sign in and sign out.<br />✑ All authentication events must be processed by PolicyApp.<br/>✑ Sign outs must be processed as fast as possible.<br/>What should you do?",
+    "type": "radio",
     "metadata": {
       "description": "<strong>Correct Answer: D</strong>",
       "reference": "https://docs.microsoft.com/en-us/azure/event-grid/subscription-creation-schema"

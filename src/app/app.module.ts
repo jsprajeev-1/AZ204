@@ -12,6 +12,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { ResultsComponent } from './results/results.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { CheckBoxComponent } from './check-box/check-box.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     QuestionFormComponent,
     QuestionsComponent,
     ResultsComponent,
-    DragDropComponent
+    DragDropComponent,
+    CheckBoxComponent
   ],
   imports: [
     BrowserModule,

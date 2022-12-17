@@ -10,7 +10,8 @@ export class Question {
     public choices?: Choice[],
     public metadata?: IMetadata,
     public options?: string[],
-    public answers?: string[]
+    public answers?: string[],
+    public type?: string
   ) {}
 }
 

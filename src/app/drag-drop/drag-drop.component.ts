@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {
   CdkDragDrop,
   moveItemInArray,
-  transferArrayItem,
+  copyArrayItem,
 } from '@angular/cdk/drag-drop';
 
 // https://stackblitz.com/edit/angular-cdk-drag-drop?file=app%2Fcdk-drag-drop-connected-sorting-example.ts
@@ -32,7 +32,7 @@ export class DragDropComponent {
         event.currentIndex
       );
     } else {
-      transferArrayItem(
+      copyArrayItem(
         event.previousContainer.data,
         event.container.data,
         event.previousIndex,

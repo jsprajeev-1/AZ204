@@ -1,0 +1,29 @@
+[
+  {
+    "id": "2",
+    "type": "checkbox",
+    "label": "Test question",
+    "metadata": {
+      "description": "<strong>Correct Answer: </strong><br />",
+      "reference": "https://google.com"
+    },
+    "choices": [
+      {
+        "description": "Option1",
+        "correct": true
+      },
+      {
+        "description": "Option2",
+        "correct": true
+      },
+      {
+        "description": "Option3",
+        "correct": false
+      },
+      {
+        "description": "Option4",
+        "correct": false
+      }
+    ]
+  }
+]
