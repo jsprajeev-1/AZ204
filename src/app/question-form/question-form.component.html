@@ -1,5 +1,5 @@
 <div class="quiz" *ngIf="question">
-  <div>
+  <div *ngIf="!question.answers">
     <strong [innerHtml]="question.label"></strong>
     <form [formGroup]="form">
       <div class="form-check" *ngFor="let choice of question.choices; let i = index">
@@ -8,6 +8,25 @@
         <label class="form-check-label" for="flexRadioDefault{{i}}">{{choice.value}}</label>
       </div>
     </form>
+  </div>
+  <div *ngIf="question.answers">
+    <div class="row">
+      <strong [innerHtml]="question.label"></strong>
+      <div class="col-sm-6">
+        <h3>Options</h3>
+        <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="options" [cdkDropListConnectedTo]="[doneList]"
+          class="example-list" (cdkDropListDropped)="drop($event)">
+          <div class="example-box" *ngFor="let item of options" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Answers</h2>
+        <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="answers" [cdkDropListConnectedTo]="[todoList]"
+          class="example-list" (cdkDropListDropped)="drop($event)">
+          <div class="example-box" *ngFor="let item of answers" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
   </div>
   <br />
   <div>

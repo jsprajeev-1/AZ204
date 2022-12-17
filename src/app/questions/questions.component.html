@@ -1,6 +1,6 @@
 <div *ngIf="questions">
   <div *ngIf="!showResults" class="questions">
-    <app-question-form [question]="questions[currentQuestionIndex!]" (onChoiceMade)="updateChoice($event)">
+    <app-question-form [question]="questions[currentQuestionIndex!]" (onChoiceMade)="updateChoice($event)" (onDragChangeMade)="updateDrag($event)">
     </app-question-form>
     <div class="padding-top padding-bottom">
       <button class="btn btn-primary" (click)="nextOrViewResults()"

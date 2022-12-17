@@ -1,14 +1,16 @@
 // defines structure of application's model
 
 export class Choice {
-  constructor(public value: string, public correct?: boolean) {}
+  constructor(public value?: string, public dropValues?: string[], public correct?: boolean) {}
 }
 
 export class Question {
   constructor(
     public label: string | HTMLElement,
-    public choices: Choice[],
-    public metadata?: IMetadata
+    public choices?: Choice[],
+    public metadata?: IMetadata,
+    public options?: string[],
+    public answers?: string[]
   ) {}
 }
 

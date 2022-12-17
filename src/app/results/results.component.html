@@ -6,8 +6,16 @@
     <div class="question-repeat">
       {{i+1}}. <p [innerHtml]="questions![i].label"></p>
     </div>
-    <p class="your-answer">
+    <p class="your-answer" *ngIf="a.value">
       {{ a.value }} ---
+      <span class="wrong-right">{{
+        a.correct ? "well done!" : "oops, maybe next time"
+      }}</span>
+    </p>
+    <p class="your-answer" *ngIf="a.dropValues">
+      <span *ngFor="let dropValue of a.dropValues; let isLast=last">
+        {{dropValue}}{{isLast ? '' : ', '}}
+     </span> ---
       <span class="wrong-right">{{
         a.correct ? "well done!" : "oops, maybe next time"
       }}</span>

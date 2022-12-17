@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-sm-6">
+		<h3>Options</h3>
+		<div cdkDropList #todoList="cdkDropList" [cdkDropListData]="options" [cdkDropListConnectedTo]="[doneList]"
+			class="example-list" (cdkDropListDropped)="drop($event)">
+			<div class="example-box" *ngFor="let item of options" cdkDrag>{{item}}</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<h2>Answers</h2>
+		<div cdkDropList #doneList="cdkDropList" [cdkDropListData]="answers" [cdkDropListConnectedTo]="[todoList]"
+			class="example-list" (cdkDropListDropped)="drop($event)">
+			<div class="example-box" *ngFor="let item of answers" cdkDrag>{{item}}</div>
+		</div>
+	</div>
+</div>

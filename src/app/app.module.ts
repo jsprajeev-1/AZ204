@@ -6,10 +6,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { QuestionFormComponent } from './question-form/question-form.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { ResultsComponent } from './results/results.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     WelcomeComponent,
     QuestionFormComponent,
     QuestionsComponent,
-    ResultsComponent
+    ResultsComponent,
+    DragDropComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

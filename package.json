@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href ./", 
+    "build": "ng build --base-href ./",
     "build-prod": "ng build --base-href https://jsprajeev-1.github.io/AZ204/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -13,6 +13,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.0.0",
+    "@angular/cdk": "^15.0.3",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
     "@angular/core": "^15.0.0",
