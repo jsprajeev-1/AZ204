@@ -82,5 +82,322 @@
         "correct": true
       }
     ]
+  },
+  {
+    "id": "9",
+    "label": "You have an application that includes an Azure Web app and several Azure Function apps. Application secrets including connection strings and certificates are stored in Azure Key Vault.<br />Secrets must not be stored in the application or application runtime environment. Changes to Azure Active Directory (Azure AD) must be minimized.<br />You need to design the approach to loading application secrets.<br />What should you do?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references"
+    },
+    "choices": [
+      {
+        "value": "Create a single user-assigned Managed Identity with permission to access Key Vault and configure each App Service to use that Managed Identity.",
+        "correct": true
+      },
+      {
+        "value": "Create a single Azure AD Service Principal with permission to access Key Vault and use a client secret from within the App Services to access Key Vault.",
+        "correct": false
+      },
+      {
+        "value": "Create a system assigned Managed Identity in each App Service with permission to access Key Vault.",
+        "correct": false
+      },
+      {
+        "value": "Create an Azure AD Service Principal with Permissions to access Key Vault for each App Service and use a certificate from within the App Services to access Key Vault.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br /> After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You are developing a medical records document management website. The website is used to store scanned copies of patient intake forms.<br /> If the stored intake forms are downloaded from storage by a third party, the contents of the forms must not be compromised.<br /> You need to store the intake forms according to the requirements.<br />Solution:<br />1. Create an Azure Key Vault key named skey.<br />2. Encrypt the intake forms using the public key portion of skey.<br />3. Store the encrypted data in Azure Blob storage.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": true
+      },
+      {
+        "value": "No",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You are developing a medical records document management website. The website is used to store scanned copies of patient intake forms.<br />If the stored intake forms are downloaded from storage by a third party, the contents of the forms must not be compromised.<br />You need to store the intake forms according to the requirements.<br />Solution:<br />1. Create an Azure Cosmos DB database with Storage Service Encryption enabled.<br />2. Store the intake forms in the Azure Cosmos DB database.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You are developing a medical records document management website. The website is used to store scanned copies of patient intake forms.<br />If the stored intake forms are downloaded from storage by a third party, the contents of the forms must not be compromised.<br />You need to store the intake forms according to the requirements.<br />Solution: Store the intake forms as Azure Key Vault secrets.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "label": "Your company is developing an Azure API hosted in Azure.<br />You need to implement authentication for the Azure API to access other Azure resources. You have the following requirements:<br />✑ All API calls must be authenticated.<br />✑ Callers to the API must not send credentials to the API.<br />Which authentication mechanism should you use?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: C</strong>"
+    },
+    "choices": [
+      {
+        "value": "Basic",
+        "correct": false
+      },
+      {
+        "value": "Anonymous",
+        "correct": false
+      },
+      {
+        "value": "Managed identity",
+        "correct": true
+      },
+      {
+        "value": "Client certificate",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You develop Azure solutions.<br />You must grant a virtual machine (VM) access to specific resource groups in Azure Resource Manager.<br />You need to obtain an Azure Resource Manager access token.<br />Solution: Use an X.509 certificate to authenticate the VM with Azure Resource Manager.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You develop Azure solutions.<br />You must grant a virtual machine (VM) access to specific resource groups in Azure Resource Manager.<br />You need to obtain an Azure Resource Manager access token.<br />Solution: Use the Reader role-based access control (RBAC) role to authenticate the VM with Azure Resource Manager.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You are developing a website that will run as an Azure Web App. Users will authenticate by using their Azure Active Directory (Azure AD) credentials.<br />You plan to assign users one of the following permission levels for the website: admin, normal, and reader. A user's Azure AD group membership must be used to determine the permission level.<br />You need to configure authorization.<br />Solution:<br />✑ Configure and use Integrated Windows Authentication in the website.<br />✑ In the website, query Microsoft Graph API to load the groups to which the user is a member.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>",
+      "reference": "https://blogs.msdn.microsoft.com/waws/2017/03/13/azure-app-service-authentication-aad-groups/"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You develop Azure solutions.<br />You must grant a virtual machine (VM) access to specific resource groups in Azure Resource Manager.<br />You need to obtain an Azure Resource Manager access token.<br />Solution: Run the Invoke-RestMethod cmdlet to make a request to the local managed identity for Azure resources endpoint.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": true
+      },
+      {
+        "value": "No",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "label": "You develop an app that allows users to upload photos and videos to Azure storage. The app uses a storage REST API call to upload the media to a blob storage account named Account1. You have blob storage containers named Container1 and Container2.<br />Uploading of videos occurs on an irregular basis.<br />You need to copy specific blobs from Container1 to Container2 when a new video is uploaded.<br />What should you do?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: B</strong>",
+      "reference": "https://docs.microsoft.com/en-us/powershell/module/azure.storage/start-azurestorageblobcopy?view=azurermps-6.13.0"
+    },
+    "choices": [
+      {
+        "value": "Copy blobs to Container2 by using the Put Blob operation of the Blob Service REST API",
+        "correct": false
+      },
+      {
+        "value": "Create an Event Grid topic that uses the Start-AzureStorageBlobCopy cmdlet",
+        "correct": true
+      },
+      {
+        "value": "Use AzCopy with the Snapshot switch to copy blobs to Container2",
+        "correct": false
+      },
+      {
+        "value": "Download the blob to a virtual machine and then upload the blob to Container2",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "label": "You are developing an ASP.NET Core website that uses Azure FrontDoor. The website is used to build custom weather data sets for researchers. Data sets are downloaded by users as Comma Separated Value (CSV) files. The data is refreshed every 10 hours.<br />Specific files must be purged from the FrontDoor cache based upon Response Header values.<br />You need to purge individual assets from the Front Door cache.<br />Which type of cache purge should you use?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/frontdoor/front-door-caching"
+    },
+    "choices": [
+      {
+        "value": "Single path",
+        "correct": true
+      },
+      {
+        "value": "wildcard",
+        "correct": false
+      },
+      {
+        "value": "root domain",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "label": "Your company is developing an Azure API.<br />You need to implement authentication for the Azure API. You have the following requirements:<br />All API calls must be secure.<br />✑ Callers to the API must not send credentials to the API.<br />Which authentication mechanism should you use?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: C</strong>",
+      "reference": "https://docs.microsoft.com/bs-cyrl-ba/azure/api-management/api-management-authentication-policies"
+    },
+    "choices": [
+      {
+        "value": "Basic",
+        "correct": false
+      },
+      {
+        "value": "Anonymous",
+        "correct": false
+      },
+      {
+        "value": "Managed identity",
+        "correct": true
+      },
+      {
+        "value": "Client certificate",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "label": "You are a developer for a SaaS company that offers many web services.<br />All web services for the company must meet the following requirements:<br />✑ Use API Management to access the services<br />✑ Use OpenID Connect for authentication<br />✑ Prevent anonymous usage<br />A recent security audit found that several web services can be called without any authentication.<br />Which API Management policy should you implement?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: D</strong>",
+      "reference": "https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad"
+    },
+    "choices": [
+      {
+        "value": "jsonp",
+        "correct": false
+      },
+      {
+        "value": "authentication-certificate",
+        "correct": false
+      },
+      {
+        "value": "check-header",
+        "correct": false
+      },
+      {
+        "value": "validate-jwt",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "label": "You develop and deploy an Azure Logic app that calls an Azure Function app. The Azure Function app includes an OpenAPI (Swagger) definition and uses an Azure Blob storage account. All resources are secured by using Azure Active Directory (Azure AD).<br />The Azure Logic app must securely access the Azure Blob storage account. Azure AD resources must remain if the Azure Logic app is deleted.<br />You need to secure the Azure Logic app.<br />What should you do?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: A</strong>"
+    },
+    "choices": [
+      {
+        "value": "Create a user-assigned managed identity and assign role-based access controls.",
+        "correct": true
+      },
+      {
+        "value": "Create an Azure AD custom role and assign the role to the Azure Blob storage account.",
+        "correct": false
+      },
+      {
+        "value": "Create an Azure Key Vault and issue a client certificate.",
+        "correct": false
+      },
+      {
+        "value": "Create a system-assigned managed identity and issue a client certificate.",
+        "correct": false
+      },
+      {
+        "value": "Create an Azure AD custom role and assign role-based access controls.",
+        "correct": false
+      }
+    ]
   }
 ]
