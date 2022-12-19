@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "type": "radio",
+    "label": "You are developing a Java application that uses Cassandra to store key and value data. You plan to use a new Azure Cosmos DB resource and the Cassandra<br />API in the application. You create an Azure Active Directory (Azure AD) group named Cosmos DB Creators to enable provisioning of Azure Cosmos accounts, databases, and containers.<br/>The Azure AD group must not be able to access the keys that are required to access the data.<br/>You need to restrict access to the Azure AD group.Which role-based access control should you use?",
+    "metadata": {
+      "description": "<strong>Correct Answer: C</strong><br />",
+      "reference": "https://azure.microsoft.com/en-us/updates/azure-cosmos-db-operator-role-for-role-based-access-control-rbac-is-now-available/"
+    },
+    "choices": [
+      {
+        "value": "DocumentDB Accounts Contributor",
+        "correct": false
+      },
+      {
+        "value": "Cosmos Backup Operator",
+        "correct": false
+      },
+      {
+        "value": "Cosmos DB Operator",
+        "correct": true
+      },
+      {
+        "value": "Cosmos DB Account Reader",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br/> You are developing a website that will run as an Azure Web App. Users will authenticate by using their Azure Active Directory (Azure AD) credentials.<br /> You plan to assign users one of the following permission levels for the website: admin, normal, and reader. A user's Azure AD group membership must be used to determine the permission level.<br />You need to configure authorization.<br />Solution: Configure the Azure Web App for the website to allow only authenticated requests and require Azure AD log on.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: No</strong>",
+      "reference": "https://blogs.msdn.microsoft.com/waws/2017/03/13/azure-app-service-authentication-aad-groups/"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br />You are developing a website that will run as an Azure Web App. Users will authenticate by using their Azure Active Directory (Azure AD) credentials.<br /> You plan to assign users one of the following permission levels for the website: admin, normal, and reader. A user's Azure AD group membership must be used to determine the permission level.<br /> You need to configure authorization.<br /> Solution:<br />✑ Create a new Azure AD application. In the application's manifest, set value of the groupMembershipClaims option to All.<br />✑ In the website, use the value of the groups claim from the JWT for the user to determine permissions.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: Yes</strong>",
+      "reference": "https://blogs.msdn.microsoft.com/waws/2017/03/13/azure-app-service-authentication-aad-groups/"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": true
+      },
+      {
+        "value": "No",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "label": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br />After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br /> You are developing a website that will run as an Azure Web App. Users will authenticate by using their Azure Active Directory (Azure AD) credentials.< br />You plan to assign users one of the following permission levels for the website: admin, normal, and reader. A user's Azure AD group membership must be used to determine the permission level. <br />You need to configure authorization.<br />Solution:<br />✑ Create a new Azure AD application. In the application's manifest, define application roles that match the required permission levels for the application.<br />✑ Assign the appropriate Azure AD group to each role. In the website, use the value of the roles claim from the JWT for the user to determine permissions.<br />Does the solution meet the goal?",
+    "type": "radio",
+    "metadata": {
+      "description": "<strong>Correct Answer: No</strong>",
+      "reference": "https://blogs.msdn.microsoft.com/waws/2017/03/13/azure-app-service-authentication-aad-groups/"
+    },
+    "choices": [
+      {
+        "value": "Yes",
+        "correct": false
+      },
+      {
+        "value": "No",
+        "correct": true
+      }
+    ]
+  }
+]
